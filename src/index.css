@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-color: #4c4f69;
+}
+
+.Card {
+  background-color: #11111b;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin-top: 20%;
+  box-shadow: 5px 5px 10px 1px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  animation: some 2s infinite;
+}
+
+@keyframes some {
+  0%, 100% {
+    border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+  }
+  50% {
+    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;
+  }
+}
+
+h2 {
+  color: hsl(234, 16%, 25%);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.hr {
+  background-color: hsl(234, 16%, 25%);
+  border: none;
+  border-radius: 10px;
+  height: 5px;
+  width: 100px;
+  margin-top: 0;
+  padding-top: 0;
+  animation: animation 1.5s infinite;
+}
+
+@keyframes animation {
+  0%, 100% {
+    width: 190px;
+  }
+  50% {
+    width: 100px;
+  }
+}
+
+p {
+  color: hsl(235, 14%, 53%);
+  font-family: Arial, Helvetica, sans-serif;
+}
